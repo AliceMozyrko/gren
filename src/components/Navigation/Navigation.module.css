@@ -1,18 +1,27 @@
+.maindiv{
+  display: flex;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.logo{
+  margin-left: 10px;
+}
+
 .container {
   display: flex;
-  gap: 10px;
-  padding: 10px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-  height: 50px;
-  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 80px;
+  font-size: 100px;
 }
 
 .link {
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .active,.link:hover  {
   text-decoration: underline;
-  color: darkred;
+  color: rgb(51, 117, 51);
 }

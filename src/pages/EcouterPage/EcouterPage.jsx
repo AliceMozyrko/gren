@@ -5,8 +5,8 @@ import {Suspense } from "react";
 import MovieDetails from "../../components/MovieDetails/MovieDetails";
 import toast, { Toaster } from 'react-hot-toast';
 import Loader from "../../components/Loader/Loader"
-import ErrorMessage from "../../components/ErrorMessage//ErrorMessage"
-import css from "./MovieDetailsPage.module.css"
+import ErrorMessage from "../../components/ErrorMessage/ErrorMessage"
+import css from "./EcouterPage.module.css"
 
 
 export default function MovieDetailsPage() {

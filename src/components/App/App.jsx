@@ -3,14 +3,15 @@ import { Route, Routes } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
 import css from "./App.module.css"
 
-
 const HomePage = lazy(() => import("../../pages/HomePage/HomePage"))
-const MoviesPage = lazy(() => import("../../pages/MoviesPage/MoviesPage"))
-const MovieDetailsPage = lazy(()=> import("../../pages/MovieDetailsPage/MovieDetailsPage"))
+const GrammairePage = lazy(() => import("../../pages/GrammairePage/GrammairePage"))
+const EcouterPage = lazy(() => import("../../pages/EcouterPage/EcouterPage"))
+const CulturePage = lazy(() => import("../../pages/CulturePage/CulturePage"))
+const TheoriePage = lazy(() => import("../../pages/TheoriePage/TheoriePage"))
+const TheorieId = lazy(() => import("../TheorieId/TheorieId"))
+const ExercicesPage = lazy(() => import("../../pages/ExercicesPage/ExercicesPage"))
+const ExerciseId = lazy(() => import("../ExerciseId/ExerciseId"))
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage/NotFoundPage"))
-const MovieCast = lazy(() => import("../MovieCast/MovieCast"))
-const MovieReviews = lazy(() => import("../MovieReviews/MovieReviews"))
-
 
 export default function App() {
   return (
@@ -18,17 +19,23 @@ export default function App() {
       <Navigation />
       <Suspense fallback={<p>Page loading...</p>}>
         <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/movies" element={<MoviesPage/>} />
-        <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
-          <Route path="cast" element={<MovieCast />} />
-          <Route path="reviews" element={<MovieReviews/> } /> 
-        </Route>
-        <Route path="*" element={<NotFoundPage/> } />
-      </Routes>
+          <Route path="/" element={<HomePage />} />
+
+          <Route path="/grammaire" element={<GrammairePage />}>
+            <Route path="theorie" element={<TheoriePage />}>
+              <Route path=":theorieId" element={<TheorieId />} />
+            </Route>
+
+            <Route path="exercices" element={<ExercicesPage />}>
+              <Route path=":exerciseId" element={<ExerciseId />} />
+            </Route>
+          </Route>
+
+          <Route path="/ecouter" element={<EcouterPage />} />
+          <Route path="/culture" element={<CulturePage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </Suspense>
-      
     </div>
   )
-  
 }

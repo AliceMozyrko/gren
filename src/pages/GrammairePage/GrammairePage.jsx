@@ -5,10 +5,10 @@ import Loader from "../../components/Loader/Loader";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import MovieList from "../../components/MovieList/MovieList"
 import { getMovieByQuery } from "../../movies-api";
-import css from "./MoviesPage.module.css"
+import css from "./GrammairePage.module.css"
 
 
-export default function MoviesPage() {
+export default function GrammairePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const nameFilmFilter = searchParams.get("name") ?? "";
 
