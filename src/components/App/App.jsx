@@ -11,6 +11,7 @@ const TheoriePage = lazy(() => import("../../pages/TheoriePage/TheoriePage"))
 const TheorieId = lazy(() => import("../TheorieId/TheorieId"))
 const ExercicesPage = lazy(() => import("../../pages/ExercicesPage/ExercicesPage"))
 const ExerciseId = lazy(() => import("../ExerciseId/ExerciseId"))
+const JouerPage = lazy(() => import("../../pages/JouerPage/JouerPage"))
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage/NotFoundPage"))
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
 
           <Route path="/ecouter" element={<EcouterPage />} />
           <Route path="/culture" element={<CulturePage />} />
+          <Route path="/jouer" element={<JouerPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

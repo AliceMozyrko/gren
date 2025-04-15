@@ -1,4 +1,3 @@
-
 import css from "./NotFoundPage.module.css"
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
@@ -11,8 +10,8 @@ export default function NotFoundPage() {
 
   return (
     <div className={css.notFoundTxt}>
-      <p >Whoah... Page is not found</p>
-       <NavLink to="/" className={makeLinkClass}>Come back to home page</NavLink>
+      <p >Oups... Page non trouvée</p>
+       <NavLink to="/" className={makeLinkClass}>Revenir à la page d&apos;accueil</NavLink>
     </div>
     
   )

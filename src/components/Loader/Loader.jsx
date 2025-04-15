@@ -9,8 +9,6 @@ export default function Loader() {
         color="#8b0000"
         ariaLabel="infinity-spin-loading"
       />
-    </div>
-    
+    </div> 
   )
-  
 }
