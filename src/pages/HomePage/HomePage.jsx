@@ -4,28 +4,28 @@
 // import Loader from "../../components/Loader/Loader";
 // import MovieList from "../../components/MovieList/MovieList"
 // import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
-
 import css from "./HomePage.module.css"
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (
     <main className={css.homeContainer}>
       <section className={css.introSection}>
-        <h1>Bienvenue sur GREN !</h1>
-        <p className={css.descrip}>
-          Nous sommes une équipe de développeurs ukrainiens passionnés de langues
-          et de technologies. Nous avons créé <strong>GREN</strong> comme une plateforme interactive
-          pour aider les apprenants ukrainiens à explorer et à maîtriser la langue française
-          de manière simple, ludique et efficace.
+        <h1>Apprennez le français avec GREN!</h1>
+        <p>
+          Une plateforme interactive pensée pour les Ukrainiens qui souhaitent <br/>
+          découvrir et maîtriser la langue française avec plaisir et efficacité
         </p>
       </section>
 
-      <section className={css.sectionBlock}>
-        <h2>📘 Grammaire</h2>
-        <p>
-          Une section dédiée aux règles essentielles de la grammaire française. Théorie claire, 
-          exemples pratiques et exercices interactifs pour renforcer vos connaissances.
-        </p>
+      <div className={css.sectionContainer}>
+        <section className={css.sectionBlock}>
+          <h2>📘 Grammaire</h2>
+          <p>
+            Une section dédiée aux règles essentielles de la grammaire française. Théorie claire, 
+            exemples pratiques et exercices interactifs pour renforcer vos connaissances.
+          </p>
+          <NavLink to="/grammaire" className={css.btn}>Découvrir</NavLink>
       </section>
 
       <section className={css.sectionBlock}>
@@ -33,56 +33,29 @@ export default function Home() {
         <p>
           Améliorez votre compréhension orale grâce à des enregistrements, des dialogues, 
           et des activités audio conçus spécialement pour les francophones débutants et intermédiaires.
-        </p>
+          </p>
+          <NavLink to="/ecouter" className={css.btn}>Découvrir</NavLink>
       </section>
+       <section className={css.sectionBlock}>
+          <h2>🇺🇦🇫🇷 Culture</h2>
+          <p>
+            Plongez dans le monde francophone: traditions, fêtes, géographie, cuisine et faits intéressants
+            sur les pays francophones pour enrichir votre apprentissage.
+            </p>
+            <NavLink to="/culture" className={css.btn}>Découvrir</NavLink>
+        </section>
 
       <section className={css.sectionBlock}>
         <h2>🎲 Jouer</h2>
         <p>
           Apprenez en vous amusant ! Découvrez nos jeux linguistiques, quiz et mini-défis
           pour pratiquer le vocabulaire, les verbes et plus encore.
-        </p>
+          </p>
+          <NavLink to="/jouer" className={css.btn}>Découvrir</NavLink>
       </section>
 
-      <section className={css.sectionBlock}>
-        <h2>🇺🇦🇫🇷 Culture</h2>
-        <p>
-          Plongez dans le monde francophone : traditions, fêtes, géographie, cuisine et faits intéressants
-          sur les pays francophones pour enrichir votre apprentissage.
-        </p>
-      </section>
+      
+      </div>
     </main>
   )
-  // const [movies, setMovies] = useState([])
-  // const [loading, setLoading] = useState(false);
-  // const [error, setError] = useState(false);
-
-  // useEffect(() => {
-  //   async function fetchMovies() {
-  //     try {
-  //       setLoading(true);
-  //       setError(false);
-  //       const data = await getMovies()
-  //       setMovies(data)
-  //     } catch (error) {
-  //       toast.error("Please, try to reload this page!")
-  //       setError(true);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   }
-  //   fetchMovies()
-  // }, [])
-
-  // return (
-  //   <div className={css.container}>
-  //     <h2 className={css.title}>Trending today</h2>
-  //     {loading && <Loader />}
-  //     {error && <ErrorMessage/>}
-  //     {movies.length > 0 && <MovieList movies={movies}/> }
-  //     <Toaster position="top-right"/>
-  //   </div>
-    
-  // )
-  
 }

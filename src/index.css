@@ -16,6 +16,7 @@ body {
 
 p:last-child {
   margin-bottom: 0;
+  line-height: 1.6;
 }
 
 ul {

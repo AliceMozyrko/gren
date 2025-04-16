@@ -12,7 +12,7 @@ export default function Navigation() {
     <header>
       <div className={css.maindiv}>
         <NavLink to="/">
-          <img src={logo} alt="Gren Logo" width={100} height={100} className={css.logo}/>
+          <img src={logo} alt="Gren Logo" width={100} height={90} className={css.logo}/>
         </NavLink>
         <nav className={css.container}>
           <NavLink to="/" className={makeLinkClass}>Home</NavLink>
