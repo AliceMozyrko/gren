@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className={css.homeContainer}>
       <section className={css.introSection}>
-        <h1>Apprennez le français avec GREN!</h1>
+        <h1>Apprennez le français <br/>avec GREN!</h1>
         <p>
           Une plateforme interactive pensée pour les Ukrainiens qui souhaitent <br/>
           découvrir et maîtriser la langue française avec plaisir et efficacité

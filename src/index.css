@@ -6,7 +6,7 @@ h5,
 h6,
 p {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   color: #2e3a23;
 }
 
@@ -16,7 +16,6 @@ body {
 
 p:last-child {
   margin-bottom: 0;
-  line-height: 1.6;
 }
 
 ul {

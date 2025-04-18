@@ -28,13 +28,18 @@
 }
 
 .introSection h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: rgb(51, 117, 51);
+  font-size: 52px;
+  font-weight: 800;
+  background: linear-gradient(to right, rgb(51, 117, 51), #a5d65c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
 }
 
 .introSection p {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .sectionContainer {
@@ -42,7 +47,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding: 20px;
 }
 
 .sectionBlock {
@@ -82,4 +86,14 @@
 
 .btn:hover{
   background: linear-gradient(135deg, #a0dd85ac, #ebc11954);
+}
+
+/* ------------TABLET------------- */
+@media screen and (max-width: 1158px) {
+
+}
+
+/* ------------MOBILE------------- */
+@media screen and (min-width: 768px) {
+  
 }

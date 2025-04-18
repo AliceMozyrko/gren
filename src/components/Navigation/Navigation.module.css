@@ -13,7 +13,6 @@
   width: 100%;
   justify-content: flex-end;
   gap: 25px;
-  margin-right: 25px;
 }
 
 .link {
@@ -37,6 +36,14 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.navCollapseMobile {
+  display: flex;
+  flex-direction: column;
+  align-items:center;  
+  gap: 12px;
+  padding: 15px 0;
+}
+
 .link,
 .active::after {
   transform: scaleX(1);
@@ -45,4 +52,26 @@
 .link:hover,
 .active {
   color: #669e50;
+}
+
+.burger{
+  padding: 20px;
+}
+
+.burgerIcon{
+  width: 40px;
+  height: 50px;
+
+}
+
+@media screen and (max-width: 1158px) {}
+
+/* ------------MOBILE------------- */
+@media screen and (max-width: 768px) {
+.logo {
+    margin-left: 0;
+  }
+.burger {
+  padding: 0;
+}
 }
