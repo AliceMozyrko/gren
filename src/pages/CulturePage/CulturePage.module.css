@@ -2,8 +2,7 @@
   margin: 0 auto;
 }
 
-.txt{
-  display: flex;
-  justify-content: center;
+.txt {
+  text-align: center;
   font-size: 25px;
 }
