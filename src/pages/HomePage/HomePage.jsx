@@ -13,8 +13,7 @@ export default function Home() {
       <section className={css.introSection}>
         <h1>Apprennez le français <br/>avec GREN!</h1>
         <p>
-          Une plateforme interactive pensée pour les Ukrainiens qui souhaitent <br/>
-          découvrir et maîtriser la langue française avec plaisir et efficacité
+          Une plateforme interactive pour les Ukrainiens <br/> qui veulent apprendre le français facilement et avec plaisir.
         </p>
       </section>
 
@@ -23,7 +22,7 @@ export default function Home() {
           <h2>📘 Grammaire</h2>
           <p>
             Une section dédiée aux règles essentielles de la grammaire française. Théorie claire, 
-            exemples pratiques et exercices interactifs pour renforcer vos connaissances.
+            exemples pratiques et exercices interactifs pour renforcer vos connaissances
           </p>
           <NavLink to="/grammaire" className={css.btn}>Découvrir</NavLink>
       </section>
@@ -32,7 +31,7 @@ export default function Home() {
         <h2>🎧 Écouter</h2>
         <p>
           Améliorez votre compréhension orale grâce à des enregistrements, des dialogues, 
-          et des activités audio conçus spécialement pour les francophones débutants et intermédiaires.
+          et des activités audio conçus spécialement pour les francophones débutants et intermédiaires
           </p>
           <NavLink to="/ecouter" className={css.btn}>Découvrir</NavLink>
       </section>
@@ -40,7 +39,7 @@ export default function Home() {
           <h2>🇺🇦🇫🇷 Culture</h2>
           <p>
             Plongez dans le monde francophone: traditions, fêtes, géographie, cuisine et faits intéressants
-            sur les pays francophones pour enrichir votre apprentissage.
+            sur les pays francophones pour enrichir votre apprentissage
             </p>
             <NavLink to="/culture" className={css.btn}>Découvrir</NavLink>
         </section>
@@ -48,8 +47,7 @@ export default function Home() {
       <section className={css.sectionBlock}>
         <h2>🎲 Jouer</h2>
         <p>
-          Apprenez en vous amusant ! Découvrez nos jeux linguistiques, quiz et mini-défis
-          pour pratiquer le vocabulaire, les verbes et plus encore.
+          Découvrez nos jeux linguistiques pour pratiquer le vocabulaire et la grammaire et pour améliorer votre compréhension du français tout en vous divertissant
           </p>
           <NavLink to="/jouer" className={css.btn}>Découvrir</NavLink>
       </section>
