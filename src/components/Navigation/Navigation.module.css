@@ -4,10 +4,6 @@
   align-items: center;
 }
 
-.logo {
-  margin-left: 12px;
-}
-
 .container {
   display: flex;
   width: 100%;
@@ -63,13 +59,8 @@
   height: 50px;
 }
 
-@media screen and (max-width: 1158px) {}
-
 /* ------------MOBILE------------- */
 @media screen and (max-width: 768px) {
-  .logo {
-      margin-left: 0;
-    }
   .burger {
     padding: 0;
   }
